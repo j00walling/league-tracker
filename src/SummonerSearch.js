@@ -17,7 +17,7 @@ const App = () => {
   const getInfo = async (q) => {
     try {
       const apiRes = await fetch(
-        `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${q}?api_key=RGAPI-2b58355d-d9b3-403e-94bf-a9f7853d0677`
+        `https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${q}?api_key=${apikey}`
       );
       const resJSON = await apiRes.json();
       setInfo({
